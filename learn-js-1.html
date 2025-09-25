@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <button type="button" id="test1">Test 1</button>
+    <button type="button" id="test2">Test 2</button>
+  </form>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const b1 = document.getElementById('test1')
+      const b2 = document.getElementById('test2')
+
+      //Algoritmo, proceso, accion
+      function mostrarSaludo(){
+        console.log("Aprendiendo JS")
+      }
+ 
+      //Evento que desencadena el proceso
+      b1.addEventListener("click", mostrarSaludo)
+      b2.addEventListener("click", mostrarSaludo)
+    })
+  </script>
+</body>
+</html>
